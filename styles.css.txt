@@ -1,0 +1,326 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #4a90e2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+}
+/* Style for each service box */
+.service {
+  background: #fff;
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  max-width: 650px;
+  border-left: 6px solid #4a90e2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+/* Service title */
+.service h3 {
+  margin-top: 0;
+  color: #4a90e2;
+  font-size: 1.4rem;
+}
+
+/* Rates heading */
+.service h4 {
+  margin-top: 1rem;
+  background-color: #eaf4ff;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #4a90e2;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Rates list */
+.service ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+.service ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+/* Optional icons for payment methods */
+.service ul li::before {
+  content: "💵";
+  margin-right: 0.5rem;
+  color: #4a90e2;
+}
+
+/* Override icons for specific lines */
+.service ul li:nth-child(1)::before {
+  content: "💲";
+}
+
+.service ul li:nth-child(2)::before {
+  content: "📍";
+}
+
+.service ul li:nth-child(3)::before {
+  content: "💳";
+}
+/* ❓ FAQ Section */
+#faq {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 4px solid #4a90e2;
+  border-radius: 6px;
+}
+
+#faq h2 {
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+details {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+details summary {
+  font-weight: bold;
+  color: #333;
+}
+
+details p {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* 🧑‍🤝‍🧑 Sample Scenarios */
+#scenarios {
+  background-color: #eef6f9;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 4px solid #4a90e2;
+  border-radius: 6px;
+}
+
+#scenarios h2 {
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+.scenario {
+  background: #fff;
+  border-left: 4px solid #4a90e2;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ Confirmation Message */
+#confirmation {
+  background-color: #e0ffe0;
+  border-left: 4px solid #4caf50;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+#confirmation h3 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+/* 🛡️ Terms & Boundaries */
+#boundaries {
+  background-color: #fff8f0;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 4px solid #f4a261;
+  border-radius: 6px;
+}
+
+#boundaries h2 {
+  color: #e76f51;
+  margin-bottom: 1rem;
+}
+
+#boundaries ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#boundaries ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+#boundaries ul li::before {
+  content: "✔️";
+  margin-right: 0.5rem;
+  color: #2a9d8f;
+}
+
+#boundaries ul li:nth-child(2)::before,
+#boundaries ul li:nth-child(3)::before {
+  content: "❌";
+  color: #e63946;
+}
+#download {
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 4px solid #4a90e2;
+  border-radius: 6px;
+}
+
+.download-buttons a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.android-btn {
+  background-color: #3ddc84;
+}
+
+.ios-btn {
+  background-color: #007aff;
+}
+.store-button img {
+  height: 60px;
+  max-width: 180px;
+  object-fit: contain;
+}
+/* 📲 Download Section */
+#download {
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 4px solid #4a90e2;
+  border-radius: 6px;
+}
+
+#download h2 {
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.store-button img {
+  height: 60px;
+  transition: transform 0.2s ease;
+}
+
+.store-button:hover img {
+  transform: scale(1.05);
+}
+
+/* 📱 Phones (portrait) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .service,
+  #faq,
+  #scenarios,
+  #boundaries {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+/* 📲 Tablets (portrait and landscape) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
+  .service {
+    max-width: 90%;
+  }
+}
+
+/* 💻 Small laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .service {
+    max-width: 80%;
+  }
+}
+
+/* 🖥️ Large screens */
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 19px;
+  }
+
+  .service {
+    max-width: 650px;
+  }
+}

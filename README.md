@@ -1,4 +1,5 @@
-# Stand-Inn-Support
+# Stand-In Support
+
 **Stand-In Support** is a personal service platform offering ethical, professional companionship and practical help for everyday life—appointments, errands, paperwork, and more.
 
 ## 💡 What It Offers
@@ -29,3 +30,4 @@ This site is installable on phones and tablets. It includes:
 
 Created by Amy M. Garza  
 Tulare, CA
+

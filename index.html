@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Amy M. Garza" />
+  <meta name="description" content="Stand-In Support offers ethical, professional companionship and practical help for everyday life—appointments, errands, and paperwork." />
+  <meta name="theme-color" content="#4a90e2" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Stand-In Support</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Stand-In Support</h1>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 🏠 Hero Section -->
+    <section id="home" class="hero">
+      <h2>Sometimes you just need a stand-in.</h2>
+      <p>Whether it's a grocery pickup or someone to talk to, we're here—professionally, ethically, and with heart.</p>
+      <a href="#contact" class="cta-button">Request a Stand-In</a>
+    </section>
+
+    <!-- 🧩 Services Section -->
+    <section id="services">
+      <h2>What We Offer</h2>
+
+      <div class="service">
+        <h3>🛒 Grocery Pickup</h3>
+        <p>You order online, I pick it up and deliver it safely. No contact if preferred.</p>
+        <h4>Rates</h4>
+        <ul>
+          <li>$20 flat per trip</li>
+          <li>Available within Tulare city limits</li>
+          <li>Payment accepted: Cash, Cashapp, PayPal, Crypto</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>📞 Friendly Conversation</h3>
+        <p>Need someone to talk to? I offer scheduled phone or video chats—no judgment, just presence.</p>
+        <h4>Rates</h4>
+        <ul>
+          <li>$25 per 30–45 minute session</li>
+          <li>Available by phone or video</li>
+          <li>Payment accepted: Cash, Cashapp, PayPal, Crypto</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>🧍 Appointment Companion</h3>
+        <p>Whether it’s a doctor’s visit or DMV line, I’ll be your calm, professional support.</p>
+        <h4>Rates</h4>
+        <ul>
+          <li>$35 per visit (up to 1 hour)</li>
+          <li>Available within Tulare city limits</li>
+          <li>Payment accepted: Cash, Cashapp, PayPal, Crypto</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>📝 Paperwork Partner</h3>
+        <p>From school forms to citizenship checklists, I help you organize and prep with clarity.</p>
+        <h4>Rates</h4>
+        <ul>
+          <li>$30/hour</li>
+          <li>Remote or in-person support available</li>
+          <li>Payment accepted: Cash, Cashapp, PayPal, Crypto</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <h3>✍️ Custom Requests</h3>
+        <p>If your need doesn’t fit into a box, describe it in the contact form. I’ll quote based on time, travel, and complexity.</p>
+        <h4>Rates</h4>
+        <ul>
+          <li>Starting at $25/hour</li>
+          <li>Quoted individually</li>
+          <li>Payment accepted: Cash, Cashapp, PayPal, Crypto</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ❓ FAQ Section -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details><summary>Can I book same-day support?</summary><p>Sometimes! It depends on availability and location. Use the contact form to ask.</p></details>
+      <details><summary>Do you offer recurring visits?</summary><p>Yes. If you need weekly or monthly support, we can set up a schedule that works for you.</p></details>
+      <details><summary>Is this service safe for seniors?</summary><p>Absolutely. I prioritize safety, respect, and clear boundaries. I’ve worked with seniors and vulnerable folks before.</p></details>
+      <details><summary>What’s your cancellation policy?</summary><p>No fee for cancellations with 24 hours’ notice. Last-minute cancellations may incur a small charge.</p></details>
+    </section>
+
+    <!-- 🧑‍🤝‍🧑 Sample Scenarios -->
+    <section id="scenarios">
+      <h2>Testimonials</h2>
+      <div class="scenario"><p><strong>Maria</strong> needed someone to sit with her during a dental appointment. I waited, kept her company, and made sure she got home safely.</p></div>
+      <div class="scenario"><p><strong>James</strong> was overwhelmed by paperwork for his housing application. We sorted documents together and submitted everything on time.</p></div>
+      <div class="scenario"><p><strong>Elena</strong> just needed someone to talk to after a tough week. We scheduled a 45-minute video chat and she left feeling lighter.</p></div>
+    </section>
+
+    <!-- 📞 Contact Section -->
+    <section id="contact">
+      <h2>Request a Stand-In</h2>
+      <form id="requestForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="service">Choose a Service:</label>
+        <select id="service" name="service">
+          <option value="">--Select--</option>
+          <option value="Grocery Pickup">Grocery Pickup</option>
+          <option value="Friendly Conversation">Friendly Conversation</option>
+          <option value="Appointment Companion">Appointment Companion</option>
+          <option value="Paperwork Partner">Paperwork Partner</option>
+        </select>
+
+        <label for="customRequest">Or describe what you need:</label>
+        <textarea id="customRequest" name="customRequest" rows="4" placeholder="Tell me what kind of support you’re looking for..."></textarea>
+
+        <label for="preferredTime">Preferred Time:</label>
+        <input type="text" id="preferredTime" name="preferredTime" placeholder="e.g. Tuesday afternoon" />
+
+        <label for="urgency">How urgent is this?</label>
+        <select id="urgency" name="urgency">
+          <option value="Not urgent">Not urgent</option>
+          <option value="Soon">Soon</option>
+          <option value="Urgent">Urgent</option>
+        </select>
+
+        <label for="contactInfo">Best Way to Reach You:</label>
+        <input type="text" id="contactInfo" name="contact" required />
+
+        <button type="submit">Submit Request</button>
+      </form>
+      <p id="messageBox"></p>
+    </section>
+
+    <!-- ✅ Confirmation Message -->
+    <div id="confirmation" style="display:none;">
+      <h3>Thank you!</h3>
+      <p>Your request has been received. I’ll be in touch soon to confirm details.</p>
+    </div>
+
+    <!-- 🧑‍💼 About Section -->
+    <section id="about">
+      <h2>Why I Built This</h2>
+      <p>I’ve worked in logistics, security, education, and corrections. I know what it means to show up for people—and I built this service to do just that.</p>
+      <p>This business is grounded in safety, ethics, and clarity. I don’t offer medical care, therapy, or anything romantic. What I do offer is presence, professionalism, and practical help—with boundaries that protect both of us.</p>
+      <h3>What This Is Not</h3>
+      <ul>
+        <li>❌ Not a dating service</li>
+        <li>❌ Not medical or therapeutic care</li>
+        <li>❌ Not overnight or live-in support</li>
+      </ul>
+      <p>If you need someone to stand in—whether it’s for a grocery run, a DMV visit, or just a conversation—I’m here to help with heart and integrity.</p>
+    </section>
+
+    <!-- 🛡️ Terms & Boundaries -->
+    <section id="boundaries">
+      <h2>What This Service Is—and Isn’t</h2>
+      <p>I offer practical, ethical support for everyday needs. That includes companionship, errands, and paperwork help—but always with clear boundaries.</p>
+
+      <ul>
+        <li>✅ I show up with professionalism, empathy, and respect.</li>
+        <li>❌ I don’t offer medical care, therapy, or romantic companionship.</li>
+        <li>❌ I don’t provide overnight or live-in support.</li>
+        <li>✅ I prioritize safety—for you and for me.</li>
+      </ul>
+
+      <p>I’m happy to join you for a family outing or a friendly date-style activity—whether it’s a walk, a meal, or an event. But this is a non-sexual service. I do not offer romantic or intimate companionship, and I maintain clear boundaries at all times.</p>
+
+      <p>If you’re unsure whether your request fits, just ask. I’ll always respond with honesty and care.</p>
+    </section>
+  </main>
+
+  <!-- 📲 App Download Buttons -->
+  <footer>
+    <section id="download">
+      <h2>Get the Stand-In Support App</h2>
+      <p>Coming soon to Android and iPhone!</p>
+
+      <div class="download-buttons">
+        <a href="#" class="store-button android">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Download on Google Play" />
+        </a>
+        <a href="#" class="store-button ios">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+        </a>
+      </div>
+    </section>
+
+    <p>&copy; 2025 Stand-In Support. Site created by Amy M. Garza. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ JavaScript and Service Worker -->
+  <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(() => console.log("Service Worker registered"))
+        .catch((error) => console.error("Service Worker error:", error));
+    }
+  </script>
+</body>
+</html>
