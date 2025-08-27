@@ -120,33 +120,36 @@
   <button type="submit">Send Request</button>
 </form>
 
-        <label for="service">Choose a Service:</label>
-        <select id="service" name="service">
-          <option value="">--Select--</option>
-          <option value="Grocery Pickup">Grocery Pickup</option>
-          <option value="Friendly Conversation">Friendly Conversation</option>
-          <option value="Appointment Companion">Appointment Companion</option>
-          <option value="Paperwork Partner">Paperwork Partner</option>
-        </select>
+       <form action="https://formspree.io/f/your-form-id" method="POST">
+  <label for="service">Choose a Service:</label>
+  <select name="service" id="service" required>
+    <option value="">-- Select --</option>
+    <option value="Grocery Pickup">Grocery Pickup</option>
+    <option value="Appointment Companion">Appointment Companion</option>
+    <option value="Paperwork Help">Paperwork Help</option>
+    <option value="Other">Other</option>
+  </select>
 
-        <label for="customRequest">Or describe what you need:</label>
-        <textarea id="customRequest" name="customRequest" rows="4" placeholder="Tell me what kind of support you’re looking for..."></textarea>
+  <label for="customRequest">Or describe what you need:</label>
+  <textarea name="customRequest" id="customRequest" placeholder="Tell me what kind of support you’re looking for..." required></textarea>
 
-        <label for="preferredTime">Preferred Time:</label>
-        <input type="text" id="preferredTime" name="preferredTime" placeholder="e.g. Tuesday afternoon" />
+  <label for="preferredTime">Preferred Time:</label>
+  <input type="text" name="preferredTime" id="preferredTime" placeholder="e.g. 12pm" required />
 
-        <label for="urgency">How urgent is this?</label>
-        <select id="urgency" name="urgency">
-          <option value="Not urgent">Not urgent</option>
-          <option value="Soon">Soon</option>
-          <option value="Urgent">Urgent</option>
-        </select>
+  <label for="urgency">How urgent is this?</label>
+  <select name="urgency" id="urgency" required>
+    <option value="">-- Select --</option>
+    <option value="ASAP">ASAP</option>
+    <option value="Soon">Soon</option>
+    <option value="Flexible">Flexible</option>
+  </select>
 
-        <label for="contactInfo">Best Way to Reach You:</label>
-        <input type="text" id="contactInfo" name="contact" required />
+  <label for="contact">Best Way to Reach You:</label>
+  <input type="text" name="contact" id="contact" placeholder="Phone, email, or both" required />
 
-        <button type="submit">Submit Request</button>
-      </form>
+  <button type="submit">Submit Request</button>
+</form>
+
       <p id="messageBox"></p>
     </section>
 
@@ -218,5 +221,6 @@
   </script>
 </body>
 </html>
+
 
 
