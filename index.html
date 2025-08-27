@@ -110,9 +110,15 @@
     <!-- 📞 Contact Section -->
     <section id="contact">
       <h2>Request a Stand-In</h2>
-      <form id="requestForm">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required />
+     <form action="https://formspree.io/f/mnqkxyz" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" required />
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required />
+  <label for="message">Request Details:</label>
+  <textarea name="message" id="message" required></textarea>
+  <button type="submit">Send Request</button>
+</form>
 
         <label for="service">Choose a Service:</label>
         <select id="service" name="service">
@@ -212,3 +218,4 @@
   </script>
 </body>
 </html>
+
