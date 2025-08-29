@@ -1,0 +1,23 @@
+
+<form action="https://formsubmit.co/garzaamy277@gmail.com" method="POST">
+  <label for="name">Your Name</label>
+  <input type="text" name="name" required>
+
+  <label for="email">Your Email</label>
+  <input type="email" name="email" required>
+
+  <label for="request">Request Type</label>
+  <select name="request">
+    <option value="delete">Delete My Data</option>
+    <option value="update">Update My Info</option>
+  </select>
+
+  <label for="message">Additional Details</label>
+  <textarea name="message" rows="4"></textarea>
+
+  <button type="submit">Submit Request</button>
+</form>
+
+
+
+
