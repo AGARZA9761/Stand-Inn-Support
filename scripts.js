@@ -21,6 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
       messageBox.style.color = "red";
       return;
     }
+    // Other cart-related functions...
+
+function checkForAlcohol(cartItems) {
+  const containsAlcohol = cartItems.some(item => item.category === 'alcohol');
+  document.getElementById('id-upload-section').style.display = containsAlcohol ? 'block' : 'none';
+  document.getElementById('alcohol-disclaimer').style.display = containsAlcohol ? 'block' : 'none';
+}
+
 
     // Use custom request if no dropdown selected
     const requestSummary = service ? service : customRequest;
@@ -36,4 +44,5 @@ document.addEventListener("DOMContentLoaded", () => {
     form.reset();
   });
 });
+
 
