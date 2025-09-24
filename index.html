@@ -261,8 +261,24 @@
         .catch((error) => console.error("Service Worker error:", error));
     }
   </script>
+  <script>
+  function checkForAlcohol(cartItems) {
+    const containsAlcohol = cartItems.some(item => item.category === 'alcohol');
+    document.getElementById('id-upload-section').style.display = containsAlcohol ? 'block' : 'none';
+  }
+
+  // Example usage:
+  const cart = [
+    { name: 'Milk', category: 'dairy' },
+    { name: 'Wine', category: 'alcohol' }
+  ];
+  checkForAlcohol(cart);
+</script>
+
+
 </body>
 </html>
+
 
 
 
